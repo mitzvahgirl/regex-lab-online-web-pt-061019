@@ -26,5 +26,6 @@ if text.scan(/^[A-Z][\s\S]+\.$/).empty?
 end
 
 def valid_phone_number?(phone)
-
+  phone.scan(/\b\(?\d{3}\)?\s?-?\d{3}-?\s?\d{4}\b/).empty? ? false : true
+end	
 end
